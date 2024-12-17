@@ -8,7 +8,7 @@ def parabola(x, a):
     return -a * (x - 1) * (x - 5)
 
 # Read the Excel file
-file_path = "/home/noman/Documents/ratings.xlsx"
+file_path = "/home/noman/Documents/SOS-Analysis/ratings.xlsx"
 data = pd.read_excel(file_path)
 
 def analyze_and_plot(data, aspect, title_suffix, color, linestyle):
@@ -52,8 +52,8 @@ def analyze_and_plot(data, aspect, title_suffix, color, linestyle):
 
     # Show the plot
     plt.show()
-# Analyze and plot for Appeal
+# Analyze and plot for "Appeal"
 analyze_and_plot(data, 'range_Appeal', "Appeal", "blue", "--")
 
-# Analyze and plot for Quality
+# Analyze and plot for "Quality"
 analyze_and_plot(data, 'range_Quality', "Quality", "red", "--")
